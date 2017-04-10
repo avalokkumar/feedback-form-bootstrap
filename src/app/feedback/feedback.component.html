@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="header">Feedback Form</div>
+  <div class="mainContainer">
+    <div class="progressBar">
+      <div class="progress progress-striped active">
+        <div class="progress-bar" style="width: 20%">Page 1 of 5</div>
+      </div>
+    </div>
+    <p class="headMsg">1. Please indicate if you agree or disagree with the following statements</p>
+    <div class="row">
+      <div class="col-md-5">
+        <span class=""></span>
+      </div>
+      <div class="col-md-1 strongDisagree">
+        <strong>Strongly Disagree</strong>
+      </div>
+      <div class="col-md-1 option">
+        <strong>Disagree</strong>
+      </div>
+      <div class="col-md-1 option">
+        <strong>Neutral</strong>
+      </div>
+      <div class="col-md-1 option">
+        <strong>Agree</strong>
+      </div>
+      <div class="col-md-1 option">
+        <strong>Strongly Agree</strong>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+    </div>
+    <div class="row" *ngFor="let ques of questions">
+      <hr class="topDivider">
+      <div class="col-md-5">
+        <span class="">{{ques.question}}</span>
+      </div>
+      <div class="col-md-1 strongDisagree">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios[{{ques.id}}]" id="optionsRadios1" value="option1" checked="">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-1 option">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios[{{ques.id}}]" id="optionsRadios2" value="option1" checked="">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-1 option">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios[{{ques.id}}]" id="optionsRadios3" value="option1" checked="">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-1 option">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios[{{ques.id}}]" id="optionsRadios4" value="option1" checked="">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-1 option">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios[{{ques.id}}]" id="optionsRadios5" value="option1" checked="">
+          </label>
+        </div>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+    </div>
+    <hr>
+    <div class="btnSection">
+      <button class="btn-primary prevBtn">Previous</button>
+       <button class="btn-primary nxtBtn">Next</button>
+    </div>
+  </div>
+</div>

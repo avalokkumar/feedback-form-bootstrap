@@ -1,0 +1,11 @@
+{
+  "questions": [
+    {"id":1, "question": "Product is affordable", "type": "radio"},
+    {"id":2, "question": "Product does what it claims", "type": "radio"},
+    {"id":3, "question": "Product is better than other products on the market", "type": "radio"},
+    {"id":4, "question": "Product is easy to use", "type": "radio"},
+    {"id":5, "question": "How satisfied are you with the Product?", "type": "text"},
+    {"id":6, "question": "How likely are you to recommend the Product to a friend or co-worker?", "type": "text"},
+    {"id":7, "question": "Product is affordable", "type": "radio"}
+  ]
+}
